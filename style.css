@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body,
+h2,
+button,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top {
+  width: 1440px;
+  height: 836px;
+}
+
+.top .top-wrapper {
+  top: 30%;
+  left: 10%;
+}
+
+.top h1 {
+  font-weight: 900;
+  font-size: 58.287px;
+  line-height: 73px;
+
+  color: #b52184;
+  margin-bottom: 0.8rem;
+}
+
+.top p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #312d64;
+  margin-bottom: 18rem;
+}
+
+.top img {
+  top: 0;
+  right: 5%;
+}
+
+.middle {
+  width: 1440px;
+  height: 576px;
+  display: flex;
+  flex-direction: row;
+  padding: 64px 111px;
+  gap: 60px;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+.middle .card {
+  padding: 32px;
+  gap: 40px;
+
+  width: 366px;
+  height: 448px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+.card img {
+  width: 9.7rem;
+  height: 9.7rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 44px;
+  margin-bottom: 1rem;
+
+  color: #b52184;
+}
+
+.card span {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+
+  color: #312d64;
+}
+
+.bottom {
+  width: 1440px;
+  height: 612px;
+  padding: 9.5rem 11rem;
+
+  background: #f9f4fb;
+}
+
+.bottom form {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.bottom form h2 {
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 53px;
+  margin-bottom: 0.6rem;
+
+  color: #b52184;
+}
+
+.bottom form .name-wrapper img,
+.bottom form .email-wrapper img {
+  top: 30%;
+  left: 1.5%;
+}
+
+.bottom form .name-wrapper input,
+.bottom form .email-wrapper input {
+  padding: 12px 16px 12px 45px;
+
+  width: 592px;
+  height: 48px;
+  border: 1.5px solid #312d64;
+  border-radius: 16px;
+}
+
+.bottom form .name-wrapper input::placeholder,
+.bottom form .email-wrapper input::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: #312d64;
+}
+
+.bottom form .text-area {
+  padding: 12px 16px 16px;
+
+  width: 592px;
+  height: 126px;
+
+  border: 1.5px solid #312d64;
+  border-radius: 16px;
+}
+
+.bottom form .text-area::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #312d64;
+}
+
+.bottom form button {
+  padding: 16px;
+
+  width: 151px;
+  height: 45px;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+.bottom .stars {
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  width: 1440px;
+  height: 78px;
+
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+  color: #ffffff;
+}
+
+@media (width <= 430px) {
+  .top {
+    width: 430px;
+    height: 679px;
+    right: 5%;
+  }
+
+  .top .astro {
+    width: 36.4rem;
+    height: 37rem;
+  }
+
+  .top .top-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    top: 55%;
+    left: 15%;
+  }
+
+  .top h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .top p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 4rem;
+  }
+
+  .top img {
+    width: 58px;
+    height: 105px;
+  }
+
+  .middle {
+    flex-direction: column;
+    width: 430px;
+    height: 1242px;
+
+    padding: 22px;
+    gap: 30px;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card p {
+    font-size: 29px;
+    line-height: 37px;
+  }
+
+  .card span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .bottom {
+    width: 430px;
+    height: 565px;
+    padding: 6rem 4rem;
+  }
+
+  .bottom form h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .bottom form .name-wrapper img,
+  .bottom form .email-wrapper img {
+    left: 4%;
+  }
+
+  .bottom form .name-wrapper input,
+  .bottom form .email-wrapper input {
+    width: 348px;
+    height: 48px;
+  }
+
+  .bottom form .text-area {
+    width: 348px;
+    height: 126px;
+  }
+
+  .bottom .stars {
+    display: none;
+  }
+
+  footer {
+    width: 436px;
+    height: 78px;
+  }
+}
